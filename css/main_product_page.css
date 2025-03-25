@@ -1,0 +1,114 @@
+
+.main-container {
+    display: flex;
+    width: 98%;
+    height: 1600px;
+    margin: auto;
+    background-color: orange;
+}
+
+.filter{
+    display: flex;
+    height: 40%;
+    width: 18%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.nadpis{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.categories{
+    flex-direction: column;
+    display: flex;
+    padding-left: 8px;
+    gap: 7px;
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px; /* miesto pre vlastný checkbox */
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Skrytie skutočného checkboxu */
+.checkbox-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Vlastný štýl pre checkmark (box) */
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+    background-color: #ddd;  /* svetlosivá farba, lepšia viditeľnosť na bielom pozadí */
+    border: 1px solid #aaa;  /* tmavší odtieň pre border */
+    border-radius: 4px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover efekt pre custom checkbox */
+.checkbox-container:hover .checkmark {
+    background-color: #ccc;
+}
+
+/* Pseudo-element pre fajku */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Keď je checkbox zaškrtnutý */
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #007bff;  /* modrá farba */
+    border-color: #007bff;
+}
+
+/* Zobrazí fajku pri zaškrtnutí */
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark::after {
+    display: block;
+}
+
+
+
+.products {
+    display: flex;
+    width: 82%;
+    height: 100%;
+    background-color: white;
+}
+
+.product_header{
+    display: flex;
+    height: 4%;
+    width: 100%;
+    background-color: cadetblue;
+}

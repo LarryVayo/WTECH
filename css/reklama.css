@@ -1,0 +1,55 @@
+.add_pictures {
+    display: flex;
+    gap: 1rem;                /* Medzera medzi kontajnermi */
+    justify-content: center;  /* Zarovnanie do stredu, prípadne použite flex-start pre zarovnanie vľavo */
+    align-items: center;
+    padding: 1rem;
+    border: black;
+}
+
+.add_pictures .picture {
+    width: 100%;       /* Pevná šírka kontajnera */
+    height: 500px;      /* Pevná výška kontajnera */
+    overflow: hidden;   /* Skrytie častí obrázka, ktoré by vyčnievali */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.add_pictures .picture img {
+    width: 100%;        /* Obrázok sa roztiahne na celú šírku kontajnera */
+    height: 100%;       /* Obrázok sa roztiahne na celú výšku kontajnera */
+    object-fit: cover;  /* Obrázok si zachová proporcie a vyplní kontajner */
+}
+
+
+.brands{
+    background: black;
+    flex-wrap: wrap;
+    width : 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.brand1{
+    background: black;
+    height: 90px;
+    width : 100px;
+}
+
+.brand1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand2 img{
+    width: 155px;
+    height: 100%;
+    object-fit: cover;
+}
