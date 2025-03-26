@@ -1,0 +1,349 @@
+
+.main_container{
+    display: flex;
+    width: 98%;
+    height: auto;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 1rem;
+    height: auto;
+    gap: 1rem;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+
+.main-board {
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Prispôsobenie obrázka, aby vždy zaplnil kontajner */
+.main-image {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;   /* alebo 'contain', ak chceš, aby celý obrázok bol viditeľný s prípadnými medzerami */
+}
+
+/* Kontajner pre náhľady */
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Štýl pre malé náhľady */
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+
+.lil_description{
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+}
+
+.short_description{
+    display: flex;
+    width: 70%;
+    padding-top: 30px;
+}
+
+.short_description_year{
+    padding-left: 20px;
+    width: 70%;
+    padding-top: 30px;
+}
+
+.short_description_special{
+    display: flex;
+    padding-top: 30px;
+}
+
+.short_description_price{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #000;        /* Čierna farba textu */
+    font-weight: bold;
+}
+
+.year_model{
+    flex-direction: row;
+    display: flex;
+}
+
+
+.store{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.dostupnost{
+    display: flex;
+    font-weight: bold;
+}
+
+.is_dostupnost{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(261deg 80% 48%);
+}
+
+.size-options {
+    display: flex;          /* zoraď do riadku */
+    gap: 0.5rem;            /* medzera medzi voľbami */
+}
+
+.size-option {
+    display: inline-flex;   /* aby sa dalo centrovať text vertikálne aj horizontálne */
+    align-items: center;
+    justify-content: center;
+    width: 60px;            /* šírka jedného „tlačidla“ */
+    height: 40px;           /* výška jedného „tlačidla“ */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;        /* kurzor ruky pri hover */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover efekt */
+.size-option:hover {
+    background-color: #f2f2f2;
+}
+
+/* Aktívna (vybraná) voľba */
+.size-option.active {
+    background-color: #000; /* čierne pozadie */
+    color: #fff;            /* biely text */
+    border-color: #000;     /* orámovanie tiež čierne */
+}
+
+.size{
+    display: flex;
+    padding-top: 10px;
+}
+
+
+
+.quantity_buy{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.qty-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.qty-input {
+    width: 40px;           /* šírka pre číslo */
+    text-align: center;    /* zarovná číslo na stred */
+    border: none;          /* zruší predvolený border */
+    outline: none;         /* odstráni orámovanie pri fokusovaní */
+    font-size: 1rem;
+}
+
+
+.add-to-cart {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.add-to-cart:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.add-to-cart:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+/* Ostatné tlačidlá .qty-btn nechaj bez tohto efektu */
+.qty-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s;
+}
+.qty-btn:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+.description_container{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.popis{
+    margin: auto;
+    padding-top: 20px;
+}
+
+.space{
+    margin: 10px;
+}
+
+.description{
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+}
+
+.novinky {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 98%;
+    padding: 1rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center; /* prípadne center, ak chceš obrázky vystrediť vertikálne */
+}
+
+.novinky_item {
+    width: 300px;
+    min-width: 200px;/* alebo podľa potreby */
+    height: 400px;
+    border-radius: 10px;
+    border: solid 1px #333;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.novinky_item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.picture_item img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* alebo contain, podľa potreby */
+}
+
+.caption {
+    color: #333;
+    width: 300px;
+    height: 50px;/* napr. ak máš pevnú šírku */
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;      /* zarovná blok horizontálne na stred */
+    text-align: center;  /* zároveň vycentruje obsah vo vnútri */
+    align-content: center;
+}
+
+
+
+.zaujimat{
+    display: flex;
+    font-family: "Courier New", Courier, monospace;
+    align-self: center;
+    margin: 20px;
+}
+
+
+.button_novinky_akcia {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Štýly pre odkazy */
+.button_novinky {
+    display: block;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+    letter-spacing: 2px;
+    transition: all 0.25s;
+}
+
+/* Hover efekt pre odkazy */
+.button_novinky:hover {
+    letter-spacing: 15px;
+}
