@@ -58,85 +58,96 @@
     <p class="nadpis">Kategoria</p>
     <div class="categories">
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="skialp">
-          Skialpové
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Horské</span>
         </label>
       </div>
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="akrobaticke">
-          Akrobatické
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Pre deti</span>
         </label>
       </div>
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="freeride">
-          Freeridové
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Cestné</span>
         </label>
       </div>
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="klasicke">
-          Klasické
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Retro</span>
         </label>
       </div>
     </div>
     <p class="nadpis">Značka</p>
     <div class="categories">
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="Ghost">
-          Ghost
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Ghost</span>
         </label>
       </div>
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="Trek">
-          Trek
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Trek</span>
         </label>
       </div>
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="CTM">
-          CTM
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">CTM</span>
         </label>
       </div>
     </div>
     <p class="nadpis">Pohlavie</p>
     <div class="categories">
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="Muž">
-          Muž
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Muž</span>
         </label>
       </div>
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="Žena">
-          Žena
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">Žena</span>
         </label>
       </div>
     </div>
     <p class="nadpis">Cena</p>
     <div class="categories">
       <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="Muž">
-          0 - 250€
-        </label>
-      </div>
-      <div class="filter-item">
-        <label>
-          <input type="checkbox" name="type" value="Žena">
-          251€ - 600€
-        </label>
-      </div>
-      <div class="filter-item">
-        <label class="checkbox-container">
-          <input type="checkbox" name="price" value="601-...">
+        <label class="container">
+          <input type="checkbox">
           <span class="checkmark"></span>
-          601€ - ...€
+          <span class="label-text">0 - 250€</span>
+        </label>
+      </div>
+      <div class="filter-item">
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">251€ - 600€</span>
+        </label>
+      </div>
+      <div class="filter-item">
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          <span class="label-text">601€ - ...€</span>
         </label>
       </div>
     </div>
@@ -144,7 +155,74 @@
 
   <div class="products">
     <div class="product_header">
+      <div class="sort-container">
+        <label>Triediť:</label>
+        <select class="sortSelect" id="sortSelect" name="sortSelect">
+          <option value="none">Vyber...</option>
+          <option value="price_asc">Cena (od najnižšej)</option>
+          <option value="price_desc">Cena (od najvyššej)</option>
+          <option value="avalibity">Dostupnosť</option>
+        </select>
+        <button class="sortButton" id="sortButton">Zoraď</button>
+      </div>
+    </div>
 
+    <div class="products_board">
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
+
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
+
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
+
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
+
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
+
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
+
+      <div class="product_item">
+        <a href="#" class="product_picture">
+          <img src="item\bike_item.jpg" alt="bike">
+        </a>
+        <p class="caption">Horský bicykel 29</p>
+        <p class="caption">250€</p>
+      </div>
     </div>
   </div>
 </div>

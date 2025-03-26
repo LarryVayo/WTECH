@@ -4,18 +4,22 @@
     width: 98%;
     height: 1600px;
     margin: auto;
-    background-color: orange;
 }
 
 .filter{
     display: flex;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
     height: 40%;
     width: 18%;
     background-color: white;
     border: 2px solid black;
     border-radius: 15px;
     flex-direction: column;
-    margin: 10px;
+    margin-top: 62px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .nadpis{
@@ -35,80 +39,177 @@
     gap: 7px;
 }
 
-.checkbox-container {
-    display: inline-block;
+
+
+.container {
+    display: flex;               /* Nastavené na flex pre vertikálne centrovanie */
+    align-items: center;         /* Vertikálne centrovanie */
     position: relative;
-    padding-left: 30px; /* miesto pre vlastný checkbox */
-    margin-bottom: 0;
+    height: 100%;
+    padding-left: 35px;
+    margin-bottom: 12px;
     cursor: pointer;
+    font-size: 15px;  /* Znížená veľkosť textu (predtým 18px) */
     user-select: none;
-    font-size: 1rem;
-    color: #333;
+    color: black;
 }
 
-/* Skrytie skutočného checkboxu */
-.checkbox-container input[type="checkbox"] {
+/* Skrytie predvoleného checkboxu */
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
-/* Vlastný štýl pre checkmark (box) */
+/* Vlastný checkbox – box */
 .checkmark {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    height: 18px;
-    width: 18px;
-    background-color: #ddd;  /* svetlosivá farba, lepšia viditeľnosť na bielom pozadí */
-    border: 1px solid #aaa;  /* tmavší odtieň pre border */
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #aaa;
     border-radius: 4px;
     transition: background-color 0.2s, border-color 0.2s;
 }
 
-/* Hover efekt pre custom checkbox */
-.checkbox-container:hover .checkmark {
+/* Hover efekt – zmena farby */
+.container:hover input ~ .checkmark {
     background-color: #ccc;
 }
 
-/* Pseudo-element pre fajku */
-.checkmark::after {
+/* Keď je checkbox zaškrtnutý, zmena farby na zelenú */
+.container input:checked ~ .checkmark {
+    background-color: green;
+    border-color: green;
+}
+
+/* Fajka – skrytá predvolene */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-    left: 6px;
-    top: 2px;
-    width: 3px;
-    height: 8px;
+}
+
+/* Zobrazenie fajky, keď je checkbox zaškrtnutý */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Štýl pre fajku */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
     border: solid white;
-    border-width: 0 2px 2px 0;
+    border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
 
-/* Keď je checkbox zaškrtnutý */
-.checkbox-container input[type="checkbox"]:checked ~ .checkmark {
-    background-color: #007bff;  /* modrá farba */
-    border-color: #007bff;
+/* Štýly pre text v checkboxe */
+.label-text {
+    margin-left: 6px;
+    vertical-align: middle;
+    color: black;
+    font-weight: normal;
 }
 
-/* Zobrazí fajku pri zaškrtnutí */
-.checkbox-container input[type="checkbox"]:checked ~ .checkmark::after {
-    display: block;
+/* Ak je checkbox zaškrtnutý, text bude tučný */
+.container input:checked ~ .label-text {
+    font-weight: bold;
 }
 
 
 
 .products {
     display: flex;
+    flex-direction: column;
     width: 82%;
     height: 100%;
     background-color: white;
 }
 
+.products_board{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.product_item {
+    width: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+    border: solid 1px #333;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.product_item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product_picture img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* alebo contain, podľa potreby */
+}
+
+.caption {
+    color: #333;
+    width: auto;
+    height: auto;/* napr. ak máš pevnú šírku */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;      /* zarovná blok horizontálne na stred */
+    text-align: center;  /* zároveň vycentruje obsah vo vnútri */
+    align-content: center;
+}
+
+
 .product_header{
     display: flex;
-    height: 4%;
+    height: auto;
+    justify-content: center;
     width: 100%;
-    background-color: cadetblue;
 }
+
+.sort-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sortSelect{
+    border-radius: 10px;
+    height: 30px;
+    width : 200px;
+}
+
+.sortButton{
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.sortButton:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
