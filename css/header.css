@@ -7,8 +7,8 @@
 /* Štýl pre header */
 header {
     background-color: #fff; /* Farba pozadia */
-    border-bottom: 1px solid #ccc; /* Jemná čiara dole */
-    height: 50px;
+    height: auto;
+    width: 98%;
     align-items: center;
     justify-content: center;
 }

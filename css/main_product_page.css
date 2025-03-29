@@ -2,7 +2,7 @@
 .main-container {
     display: flex;
     width: 98%;
-    height: 1600px;
+    height: auto;
     margin: auto;
 }
 
@@ -42,19 +42,19 @@
 
 
 .container {
-    display: flex;               /* Nastavené na flex pre vertikálne centrovanie */
-    align-items: center;         /* Vertikálne centrovanie */
+    display: flex;
+    align-items: center;
     position: relative;
     height: 100%;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 15px;  /* Znížená veľkosť textu (predtým 18px) */
+    font-size: 15px;
     user-select: none;
     color: black;
 }
 
-/* Skrytie predvoleného checkboxu */
+
 .container input {
     position: absolute;
     opacity: 0;
@@ -63,7 +63,7 @@
     width: 0;
 }
 
-/* Vlastný checkbox – box */
+
 .checkmark {
     position: absolute;
     top: 50%;
@@ -77,30 +77,30 @@
     transition: background-color 0.2s, border-color 0.2s;
 }
 
-/* Hover efekt – zmena farby */
+
 .container:hover input ~ .checkmark {
     background-color: #ccc;
 }
 
-/* Keď je checkbox zaškrtnutý, zmena farby na zelenú */
+
 .container input:checked ~ .checkmark {
     background-color: green;
     border-color: green;
 }
 
-/* Fajka – skrytá predvolene */
+
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Zobrazenie fajky, keď je checkbox zaškrtnutý */
+
 .container input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Štýl pre fajku */
+
 .container .checkmark:after {
     left: 9px;
     top: 5px;
@@ -111,7 +111,7 @@
     transform: rotate(45deg);
 }
 
-/* Štýly pre text v checkboxe */
+
 .label-text {
     margin-left: 6px;
     vertical-align: middle;
@@ -119,7 +119,7 @@
     font-weight: normal;
 }
 
-/* Ak je checkbox zaškrtnutý, text bude tučný */
+
 .container input:checked ~ .label-text {
     font-weight: bold;
 }
@@ -140,9 +140,8 @@
     gap: 1rem;
     padding: 1rem;
     height: auto;
-    width: 100%;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .product_item {
@@ -162,17 +161,17 @@
     display: flex;
     max-width: 100%;
     height: auto;
-    object-fit: contain; /* alebo contain, podľa potreby */
+    object-fit: contain;
 }
 
 .caption {
     color: #333;
     width: auto;
-    height: auto;/* napr. ak máš pevnú šírku */
+    height: auto;
     text-decoration: none;
     display: block;
-    margin-bottom: 20px;      /* zarovná blok horizontálne na stred */
-    text-align: center;  /* zároveň vycentruje obsah vo vnútri */
+    margin-bottom: 20px;
+    text-align: center;
     align-content: center;
 }
 
