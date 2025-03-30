@@ -15,9 +15,7 @@
     align-items: center;
     justify-content: center;
 }
-.logo {
-    text-align: center; 
-}
+
 
 .image-uploader {
     display: flex;

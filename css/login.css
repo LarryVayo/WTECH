@@ -32,39 +32,21 @@ input {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
-    text-align: center;
 }
 .btn-login {
     background-color: #28a745;
     color: white;
     margin-top: 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
+    margin-bottom: 10px
 }
 .btn-register {
     background-color: #dc3545;
-    width: 95%;
     color: white;
     margin-top: 10px;
-    margin-bottom: 10px;
 
-    text-decoration: none;
 }
 .footer {
     margin-top: 20px;
     font-size: 12px;
     color: #666;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .btn {
-        font-size: 14px;
-        padding: 12px;
-    }
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
 }

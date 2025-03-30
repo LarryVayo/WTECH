@@ -7,17 +7,17 @@
   <link rel = "stylesheet" href = "css/footer.css">
   <link rel = "stylesheet" href = "css/liked.css">
   <link rel = "stylesheet" href = "css/paggination.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel = "stylesheet" href = "css/product_item.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="logo">
-        <a href="home_page.html">
-            <img src="images\logo.png" alt="sportEquip">
-        </a>
-    </div>
-    
+<header class="main-header">
+  <div class="header-logo">
+    <a href="home_page.html">
+      <img src="images/logo.png" alt="logo">
+    </a>
+  </div>
 </header>
 <div class="header-container">
 
@@ -30,10 +30,9 @@
   <nav class = "categories">
     <ul>
       <li><a href = "#" class = "button">Novinky</a></li>
+      <li><a href = "#" class = "button">Akcie</a></li>
       <li><a href = "#" class = "button">Bicykle</a></li>
-      <li><a href = "#" class = "button">Kolobežky</a></li>
       <li><a href = "#" class = "button">Lyže</a></li>
-      <li><a href = "#" class = "button">Korčule</a></li>
     </ul>
   </nav>
 
@@ -44,18 +43,9 @@
       </a>
       <input type="text" class="search-input" placeholder="Hľadať...">
     </div>
-    <a href="#" class="icon-user" id="user-icon">
-      <img src="images\user.svg" alt="user">
-  </a>
-
-
-  <div id="user-menu" class="user-menu">
-      <ul>
-           <li><a href="account.html">Môj účet</a></li>
-           <li><a href="orders.html">Objednávky</a></li>
-           <li><a href="index.html">Odhlásenie</a></li>
-      </ul>
-  </div>
+    <a href="#" class = "icon-user">
+      <img src="images/user.svg" alt="user">
+    </a>
     <a href="#" class = "icon-liked">
       <img src="images/heart.svg" alt="liked">
     </a>
@@ -83,75 +73,156 @@
 
     <div class="products_board">
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
 
       <div class="product_item">
-        <a href="#" class="product_picture">
+        <div class="like-button-container">
+          <button onclick="Toggle1(this)" class="like-button" aria-label="Like">
+            <i class="fas fa-heart"></i>
+          </button>
+        </div>
+        <a href="description_of_product.html" class="product_picture">
           <img src="item/bike_item.jpg" alt="bike">
         </a>
-        <p class="caption">Horský bicykel 29</p>
-        <p class="caption">250€</p>
+        <div class="product-base-info">
+          <span class="caption">Horský bicykel 29</span>
+        </div>
+        <div class="product-base-info">
+          <span class="caption">250€</span>
+        </div>
       </div>
     </div>
   </div>
@@ -217,6 +288,7 @@
 
 <script src="script_home.js"></script>
 <script src="script/paggination.js"></script>
+<script src="script/liked.js"></script>
 
 </body>
 </html>
