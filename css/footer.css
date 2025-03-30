@@ -24,10 +24,10 @@
 
 
 .contacts {
-    display: flex;         /* Toto je dôležité! */
+    display: flex;
     flex-direction: row;
-    align-items: center;   /* Vertikálne zarovnanie */
-    gap: 1rem;             /* Medzera medzi ikonou a textom */
+    align-items: center;
+    gap: 1rem;
 }
 
 .contact_us{
@@ -65,16 +65,16 @@
     align-items: center;
     text-decoration: none;
     display: block;
-    margin: 0 auto;      /* zarovná blok horizontálne na stred */
-    text-align: center;  /* zároveň vycentruje obsah vo vnútri */
+    margin: 0 auto;
+    text-align: center;
     align-content: center;
 }
 
 .ig-photos{
     width: 100%;
     gap: 5px;
-    display: flex;            /* aktivuje flexbox */
-    justify-content: center;  /* zarovná ikony horizontálne na stred */
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 

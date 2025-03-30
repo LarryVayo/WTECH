@@ -1,7 +1,7 @@
 .add_pictures {
     display: flex;
-    gap: 1rem;                /* Medzera medzi kontajnermi */
-    justify-content: center;  /* Zarovnanie do stredu, prípadne použite flex-start pre zarovnanie vľavo */
+    gap: 1rem;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     border: black;
@@ -16,5 +16,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 2s ease; /* Prechod opacity 1 sekundu */
+    transition: opacity 2s ease;
 }

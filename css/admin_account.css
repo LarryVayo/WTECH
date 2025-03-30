@@ -35,8 +35,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* alebo iná šírka, podľa potreby */
-    padding: 0 1rem; /* voliteľné odsadenie zľava a vpravo */
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .field-information{

@@ -19,15 +19,15 @@
 
 .image-uploader {
     display: flex;
-    gap: 10px;              /* Medzera medzi boxmi */
-    justify-content: center;/* Vycentruje boxy horizontálne */
+    gap: 10px;
+    justify-content: center;
     margin: 20px auto;
 }
 
 .thumbnail {
     width: 150px;
     height: 150px;
-    border: 1px dashed #ccc; /* Prerušené orámovanie */
+    border: 1px dashed #ccc;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -118,10 +118,10 @@
 .qty-input {
     border-radius: 10px;
     width: 70px;
-    height: 30px;/* šírka pre číslo */
-    text-align: center;    /* zarovná číslo na stred */
-    border: none;          /* zruší predvolený border */
-    outline: none;         /* odstráni orámovanie pri fokusovaní */
+    height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
     font-size: 1rem;
 }
 

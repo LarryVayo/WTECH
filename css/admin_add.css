@@ -89,12 +89,12 @@
     margin: 1rem;
     width: 300px;
     height: 400px;
-    display: flex;             /* aby mohol fungovať flex layout, ak potrebuješ */
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;       /* voliteľné – ak chceš obrázok vystrediť, ak nebude 100% */
+    align-items: center;
     border: 3px solid darkgrey;
-    overflow: hidden;          /* skryje prebytočnú časť obrázka, ak použiješ cover */
+    overflow: hidden;
 }
 
 .product_item:hover {
@@ -119,11 +119,11 @@
 .caption {
     color: #333;
     width: 100%;
-    height: auto;/* napr. ak máš pevnú šírku */
+    height: auto;
     text-decoration: none;
     display: block;
-    margin: 0 auto;      /* zarovná blok horizontálne na stred */
-    text-align: center;  /* zároveň vycentruje obsah vo vnútri */
+    margin: 0 auto;
+    text-align: center;
     align-content: center;
 }
 
@@ -136,13 +136,13 @@
 
 
 .button-edit {
-    display: inline-flex;  /* alebo flex, ak je to potrebné */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
     padding: 5px;
-    margin-left: 10px;     /* nastav si hodnotu odsadenia zľava */
+    margin-left: 10px;
     border: 2px solid transparent;
     border-radius: 10px;
     transition: background-color 0.4s, color 0.4s, border-color 0.4s;
@@ -152,17 +152,17 @@
 
 .button-edit:hover {
     color: white;
-    border-color: black; /* border sa zmení na čierny */
+    border-color: black;
 }
 
 
 .button-delete {
-    display: inline-flex;  /* alebo flex, ak je to potrebné */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    margin-left: 10px;     /* nastav si hodnotu odsadenia zľava */
+    margin-left: 10px;
     border: 2px solid transparent;
     border-radius: 10px;
     transition: background-color 0.4s, color 0.4s, border-color 0.4s;
@@ -172,6 +172,6 @@
 
 .button-delete:hover {
     color: white;
-    border-color: black; /* border sa zmení na čierny */
+    border-color: black;
 }
 

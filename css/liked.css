@@ -25,39 +25,6 @@
     justify-content: center;
 }
 
-.product_item {
-    flex: 1 1 300px; /* Základná šírka je 300px, ale môže rásť a zmenšovať sa */
-    width: 300px; /* Karty sa nebudú zväčšovať nad 300px */
-    min-width: 200px; /* Karty sa nebudú zmenšovať pod 200px */
-    border-radius: 10px;
-    border: 1px solid #333;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-}
-
-.product_item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.product_picture img {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain; /* alebo contain, podľa potreby */
-}
-
-.caption {
-    color: #333;
-    width: auto;
-    height: auto;/* napr. ak máš pevnú šírku */
-    text-decoration: none;
-    display: block;
-    margin-bottom: 20px;      /* zarovná blok horizontálne na stred */
-    text-align: center;  /* zároveň vycentruje obsah vo vnútri */
-    align-content: center;
-}
 
 
 .product_header{
