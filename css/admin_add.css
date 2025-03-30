@@ -6,7 +6,9 @@
     align-items: center;
     gap: 1rem;
 }
-
+.logo {
+    text-align: center; 
+}
 .sortSelect{
     border-radius: 10px;
     min-width: 200px;

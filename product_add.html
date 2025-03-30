@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="css/product_add.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/add_bullet.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-<header class="main-header">
-    <div class="header-logo">
-        <a href="home_page.html">
-            <img src="images/logo.png" alt="logo">
-        </a>
-    </div>
-</header>
+    <header class="main-header">
+        <div class="logo">
+            <a href="home_page.html">
+                <img src="images\logo.png" alt="sportEquip">
+            </a>
+        </div>
+        
+    </header>
 <div class="header-container">
 
     <div class="hamburger">
@@ -27,9 +28,10 @@
     <nav class = "categories">
         <ul>
             <li><a href = "#" class = "button">Novinky</a></li>
-            <li><a href = "#" class = "button">Akcie</a></li>
             <li><a href = "#" class = "button">Bicykle</a></li>
+            <li><a href = "#" class = "button">Kolobežky</a></li>
             <li><a href = "#" class = "button">Lyže</a></li>
+            <li><a href = "#" class = "button">Korčule</a></li>
         </ul>
     </nav>
 
@@ -40,9 +42,18 @@
             </a>
             <input type="text" class="search-input" placeholder="Hľadať...">
         </div>
-        <a href="#" class = "icon-user">
+        <a href="#" class="icon-user" id="user-icon">
             <img src="images\user.svg" alt="user">
         </a>
+
+
+        <div id="user-menu" class="user-menu">
+            <ul>
+                 <li><a href="account.html">Môj účet</a></li>
+                 <li><a href="orders.html">Objednávky</a></li>
+                 <li><a href="index.html">Odhlásenie</a></li>
+            </ul>
+        </div>
         <a href="#" class = "icon-liked">
             <img src="images\heart.svg" alt="liked">
         </a>
@@ -87,11 +98,6 @@
             <div class="description-content">
                 <label for="description">Širší popis:</label><br>
                 <textarea class="input-description" id="description" name="description" placeholder="Napíš popis produktu..."></textarea>
-            </div>
-            <div class="bullet-input-container">
-                <ul id="bulletList">
-                </ul>
-                <button id="addBulletBtn">Pridať odrážku</button>
             </div>
         </div>
 
@@ -212,7 +218,6 @@
 
 
 <script src="script_home.js"></script>
-<script src="script/add_bullet.js"></script>
 
 </body>
 </html>

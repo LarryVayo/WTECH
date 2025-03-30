@@ -11,7 +11,9 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
+.logo {
+    text-align: center; 
+}
 .user-menu.active {
     display: block;
     opacity: 1;

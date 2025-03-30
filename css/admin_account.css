@@ -5,7 +5,9 @@
     align-items: center;
     justify-self: center;
 }
-
+.logo {
+    text-align: center; 
+}
 .admin-account {
     display: flex;
     justify-self: center;
