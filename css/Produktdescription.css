@@ -16,7 +16,9 @@
     height: auto;
     gap: 1rem;
 }
-
+.logo {
+    margin-bottom: 0px;
+}
 
 .gallery {
     display: flex;

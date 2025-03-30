@@ -10,7 +10,9 @@
 .product_item:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
+.logo {
+    margin-bottom: 0px;
+}
 .product_picture img {
     display: flex;
     max-width: 100%;

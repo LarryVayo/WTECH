@@ -12,7 +12,9 @@
     padding: 0;
     margin: 0;
 }
-
+.logo {
+    margin-bottom: 0px;
+}
 .bullet-item {
     display: flex;
     align-items: center;
