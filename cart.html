@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Košík - sportEquip</title>
+    <link rel="stylesheet" href="css\cart.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="logo.png" alt="sportEquip">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Novinky</a></li>
+                    <li><a href="#">Bicykle</a></li>
+                    <li><a href="#">Kolobežky</a></li>
+                    <li><a href="#">Lyžovanie</a></li>
+                    <li><a href="#">Korčule</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="#">Meno a Priezvisko</a>
+                <a href="#"><i class="icon-user"></i></a>
+                <a href="#"><i class="icon-heart"></i></a>
+                <a href="#"><i class="icon-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Košík</h1>
+        <div class="cart-steps">
+            <button class="active">Košík</button>
+            <button>Doprava a platba</button>
+            <button>Dodacie údaje</button>
+        </div>
+        <section class="cart-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="bicycle.png" alt="Bicycle"> Bicycle</td>
+                        <td>550.00 €</td>
+                        <td><input type="number" value="2"></td>
+                        <td>1100.00 €</td>
+                    </tr>
+                </tbody>
+            </table>
+            <aside class="cart-summary">
+                <h2>Cart Totals</h2>
+                <p>Total: <span>1100.00 €</span></p>
+                <button class="btn btn-continue">Pokračovať</button>
+                <button class="btn btn-back">Späť do obchodu</button>
+            </aside>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-info">
+            <div class="about">
+                <h3>Kto sme?</h3>
+                <ul>
+                    <li><a href="#">Obchodné podmienky</a></li>
+                    <li><a href="#">Ochrana osobných údajov</a></li>
+                    <li><a href="#">Informácie o vrátení tovaru</a></li>
+                </ul>
+            </div>
+            <div class="partners">
+                <h3>Naši partneri:</h3>
+                <img src="partner-logos.png" alt="Partneri">
+            </div>
+            <div class="contact">
+                <h3>Kontaktujte nás</h3>
+                <p>Email: eshop@sportEquip.sk</p>
+                <p>Tel: +421589792655</p>
+                <p>Vajnorská 128, Bratislava 1</p>
+            </div>
+            <div class="payments">
+                <h3>Akceptujeme:</h3>
+                <img src="payment-methods.png" alt="Platobné metódy">
+            </div>
+        </div>
+        <p class="copyright">© 2025 - 2025 sportEquip</p>
+    </footer>
+</body>
+</html>
