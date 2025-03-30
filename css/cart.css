@@ -8,6 +8,32 @@
     text-align: center;
 }
 
+/* Cart Steps */
+.cart-steps {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.cart-steps button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-steps button:hover {
+    background-color: #444;
+}
+
+.cart-steps .active {
+    background-color: #666;
+}
 .cart-navigation {
     display: flex;
     justify-content: center;
@@ -88,3 +114,5 @@
     width: 100%;
     margin-top: 5px;
 }
+
+

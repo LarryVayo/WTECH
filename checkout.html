@@ -5,7 +5,7 @@
     <title>sportEquip</title>
     <link rel = "stylesheet" href="css\header.css">
     <link rel = "stylesheet" href="css\reklama.css">
-    <link rel = "stylesheet" href="css\cart.css">
+    <link rel = "stylesheet" href="css\checkout.css">
     <link rel = "stylesheet" href="css\footer.css">
     
 </head>
@@ -52,48 +52,77 @@
                 </a>
             </div>
         </div>
-        <section class="cart-container">
-            <h1>Košík</h1>
+        
+        <main>
+            <h1>Informácie o Vás</h1>
             <div class="cart-steps">
-                <button class="active">Košík</button>
+                <button onclick="location.href='cart.html'">Košík</button>
                 <button onclick="location.href='payment.html'">Doprava a platba</button>
-                <button onclick="location.href='checkout.html'">Dodacie údaje</button>
+                <button class="active">Dodacie údaje</button>
             </div>
             
-            <div class="cart-content">
-                <table class="cart-table">
-                    <thead>
-                        <tr>
-                            <th>Produkt</th>
-                            <th>Cena</th>
-                            <th>Množstvo</th>
-                            <th>Medzisúčet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="images/bike.png" alt="Bicykel"></td>
-                            <td>150.00 €</td>
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>150.00 €</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <div class="cart-summary">
-                    <h2>Cart Totals</h2>
-                    <p><strong>Total:</strong> <span class="total-price">150.00 €</span></p>
+        </main>
+        <div class="main-container-account">
+            <div class="account">
+                <div class="content">
+                    <div class="row">
+                        <p>Meno:</p>
+                        <div class="field-information">
+                            <p>Kokos</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Priezvisko:</p>
+                        <div class="field-information">
+                            <p>Novák</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Email:</p>
+                        <div class="field-information">
+                            <p>kokos.novak@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Telefón:</p>
+                        <div class="field-information">
+                            <p>+421 951 854 321</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Ulica:</p>
+                        <div class="field-information">
+                            <p>Lotolská</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>PSČ:</p>
+                        <div class="field-information">
+                            <p>08501</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Mesto:</p>
+                        <div class="field-information">
+                            <p>Hummené</p>
+                        </div>
+                    </div>
+                   
                     
-                    <button class="checkout-btn">Pokračovať</button>
-                    <button class="back-btn">Späť do obchodu</button>
+                   
                 </div>
             </div>
-        </section>
+            
+        </div>
+        <div class="cart-summary">
+            <h2>Cart Totals</h2>
+            <p>Platba: <span>1.00 €</span></p>
+            <p>Doprava: <span>3.50 €</span></p>
+            <p>Total: <span>104.50 €</span></p>
+            <button class="btn btn-continue">Zaplatiť</button>
+
+        </div>
         
-
-
-
-
     <footer class="site-footer">
         <div class="left-one">
             <div class="left-top">
