@@ -17,7 +17,9 @@
     gap: 1rem;
 }
 
-
+.logo {
+    text-align: center; 
+}
 .gallery {
     display: flex;
     flex-direction: column;
