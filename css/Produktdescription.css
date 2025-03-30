@@ -68,7 +68,7 @@
 
 
 .lil_description{
-    min-width: 1000px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     width: 30%;

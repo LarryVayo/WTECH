@@ -46,6 +46,8 @@
     border-radius: 10px;
     border: solid 1px #333;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
     transition: box-shadow 0.3s ease;
 }
 
@@ -63,10 +65,11 @@
 .caption {
     color: #333;
     width: 300px;
-    height: 50px;/* napr. ak máš pevnú šírku */
+    height: auto;/* napr. ak máš pevnú šírku */
     text-decoration: none;
     display: block;
-    margin: 0 auto;      /* zarovná blok horizontálne na stred */
+    margin: 10px;      /* zarovná blok horizontálne na stred */
     text-align: center;  /* zároveň vycentruje obsah vo vnútri */
     align-content: center;
 }
+
