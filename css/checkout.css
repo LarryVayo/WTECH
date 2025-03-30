@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+
+.logo {
+    text-align: center; 
+}
 /* Cart Steps */
 .cart-steps {
     display: flex;

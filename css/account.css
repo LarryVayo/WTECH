@@ -6,6 +6,9 @@
     justify-self: center;
 }
 
+.logo {
+    text-align: center; 
+}
 .account {
     display: flex;
     justify-self: center;

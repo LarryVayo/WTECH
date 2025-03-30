@@ -41,6 +41,10 @@ h1 {
     font-size: 28px;
     margin: 20px 0;
 }
+
+.logo {
+    text-align: center; 
+}
 /* Cart Steps */
 .cart-steps {
     display: flex;
